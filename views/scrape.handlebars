@@ -1,0 +1,10 @@
+<div class="jumbotron">
+<h1>Roller Scraper</h1>
+<p>Get your latest news on roller coasters!</p>
+<p><a class="btn btn-primary btn-lg" href="#" role="button">Scrape</a></p>
+</div>
+
+  {{#each articles}}
+      <h2>{{this.title}}</h2>
+      <a href="http://www.screamscape.com/{{this.link}}"> Read More</a>
+  {{/each}}
